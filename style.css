@@ -29,3 +29,24 @@ body {
 	background-image: url("pinstripe.png");
 	background-repeat: both;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'BabesInToyland', serif;
+}
+
+h1 {
+  font-size: 400%;
+}
+
+.main-content {
+  margin: 0px;
+  padding: 0px 10px;
+}
+
+.mini {
+  font-size: 60%;
+}
