@@ -49,6 +49,9 @@ h1 {
 
 .header-image {
 	max-width: 600px;
+	width: 100%;
+	padding: 0px 10px;
+	box-sizing: border-box;
 }
 
 .mini {
@@ -70,8 +73,10 @@ h1 {
 
 /* Form Stuff */
 form {
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0px 10px;
 }
 fieldset {
 	display: flex;
@@ -137,13 +142,63 @@ legend, .submit-button {
 .behind-line {
 	position: relative;
 	top: -25px;
-	margin: 0px 80px;
 	
 	width: 50px;
+}
+.behind-line-left {
+	margin: 0px 80px 0px 0px;
+}
+.behind-line-right {
+	margin: 0px 0px 0px 80px;
 }
 .squish-columns {
 	display: flex;
 	flex-wrap: none;
 	
 	justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+	.two-column {
+		flex: none;
+		flex-wrap: wrap;
+	}
+	.two-column > .labeled-input {
+		min-width: 0px;
+		width: 100%;
+		max-width: 100%;
+	}
+	.labeled-input {
+		display: block;
+		white-space: normal;
+		text-align: center;
+		
+		min-width: 0px;
+		max-width: 100%;
+	}
+	label {
+		display: block;
+		margin: 3px;
+		white-space: normal;
+		
+		flex: none;
+		
+		min-width: 0px;
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+	input {
+		margin: 3px auto 20px auto;
+	}
+	fieldset {
+		padding: 15px 10px;
+		max-width: 100%;
+		box-sizing: border-box;
+	}
+	form {
+		position: relative;
+		max-width: 100%;
+		padding: 0px 10px;
+		box-sizing: content-box;
+	}
 }
