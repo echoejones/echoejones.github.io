@@ -20,6 +20,9 @@
 }
 
 body {
+	position: relative;
+	top: -10px;
+	left: 0px;
 	margin: 0px;
 	padding: 0px;
 	
@@ -27,11 +30,13 @@ body {
 	font-weight: 300;
 	color: white;
 	font-size: 100%;
+	line-height: 1.25;
 	
 	min-height: 100vh;
 
 	background: #030333;
-	background: linear-gradient(#5050CF, #000009);
+	background: linear-gradient(#5050DD, #000009);
+	box-shadow: 0 0 calc(5vw + 5vh) rgba(0,0,0,0.9) inset;
 	box-sizing: border-box;
 }
 
@@ -40,11 +45,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3 {
-	font-family: 'BabesInToyland', serif;
+	position: relative;
+	top: 20px;
+	font-family: 'Grenadier', sans-serif;
+	font-weight: lighter;
+	line-height: 1;
+	margin: 10px 0px 20px 0px;
 }
 
 h1 {
 	font-size: 400%;
+}
+h2 {
+	font-size: 300%;
+}
+p {
+	margin: 10px;
+}
+
+section {
+	flex-basis: 100%;
+	margin: 30px 10px;
 }
 
 .cursive {
@@ -52,11 +73,31 @@ h1 {
 	font-weight: lighter;
 	line-height: 75%;
 }
+span.cursive {
+	position: relative;
+	font-size: 200%;
+	line-height: 25%;
+}
+span.jumbo {
+	font-size: 350%;
+}
+span.wumbo {
+	font-size: 500%;
+}
+.grenadier {
+	font-family: 'Grenadier', sans-serif;
+}
+.squish-height {
+	line-height: 50%;
+	margin: 0px;
+	padding: 0px;
+}
 
 .header-image {
 	max-width: 600px;
 	width: 100%;
-	padding: 20px 10px 0px 10px;
+	padding: 30px 10px 10px 10px;
+	margin: 0px;
 	box-sizing: border-box;
 }
 
@@ -82,7 +123,7 @@ form {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0px 10px;
+	margin: 40px 10px;
 }
 fieldset {
 	display: flex;
