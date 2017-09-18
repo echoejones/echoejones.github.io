@@ -222,6 +222,6 @@ legend {
 
 @media (orientation: portrait) {
 	body {
-		font-size: calc(58px - 0.25vh);
+		font-size: calc(50px - 4vh + 2vw);
 	}
 }
