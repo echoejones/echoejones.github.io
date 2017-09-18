@@ -201,6 +201,7 @@ legend {
 	}
 	input {
 		margin: 3px auto 20px auto;
+		min-width: 50%;
 	}
 	fieldset {
 		padding: 15px 10px;
