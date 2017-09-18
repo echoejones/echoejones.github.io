@@ -169,7 +169,7 @@ legend {
 
 @media screen and (max-width: 1000px) {
 	body {
-		font-size: 15px;
+		font-size: calc(15px - 0.1vh);
 	}
 	.two-column {
 		flex: none;
