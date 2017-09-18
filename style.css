@@ -29,6 +29,7 @@ body {
 	font-size: 100%;
 
 	background: #050533;
+	box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -95,7 +96,7 @@ label {
 	font-size: 100%;
 }
 input {
-	margin: 5px 30px 5px 5px;
+	margin: 5px 40px 5px 5px;
 	padding: 1px 5px;
 	
 	font-family: 'Josefin Sans', sans-serif;
@@ -103,6 +104,7 @@ input {
 	text-align: center;
 	
 	width: 175px;
+	box-sizing: border-box;
 }
 legend {
 	font-family: 'Josefin Sans', sans-serif;
@@ -111,6 +113,9 @@ legend {
 	color: white;
 	padding: 0px 15px;
 	width: auto;
+}
+.hidden {
+	display: none !important;
 }
 .two-column {
 	display: flex;
@@ -123,6 +128,7 @@ legend {
 .labeled-input {
 	display: flex;
 	flex-wrap: none;
+	margin: 0px 0px 0px 0px;
 	
 	justify-content: flex-end;
 	text-align: right;
@@ -167,9 +173,17 @@ legend {
 	justify-content: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 850px), screen and (orientation: portrait) {
 	body {
 		font-size: 20px;
+	}
+	.labeled-input {
+		display: block;
+		white-space: normal;
+		text-align: center;
+		
+		min-width: 50%;
+		max-width: 100%;
 	}
 	.two-column {
 		flex: none;
@@ -178,14 +192,6 @@ legend {
 	.two-column > .labeled-input {
 		min-width: 0px;
 		width: 100%;
-		max-width: 100%;
-	}
-	.labeled-input {
-		display: block;
-		white-space: normal;
-		text-align: center;
-		
-		min-width: 50%;
 		max-width: 100%;
 	}
 	label {
@@ -197,7 +203,6 @@ legend {
 		
 		min-width: 0px;
 		max-width: 100%;
-		box-sizing: border-box;
 	}
 	input {
 		margin: 3px auto 20px auto;
@@ -206,13 +211,11 @@ legend {
 	fieldset {
 		padding: 15px 10px;
 		max-width: 100%;
-		box-sizing: border-box;
 	}
 	form {
 		position: relative;
 		max-width: 100%;
 		padding: 0px 10px;
-		box-sizing: content-box;
 	}
 	legend {
 		font-size: 250%;
