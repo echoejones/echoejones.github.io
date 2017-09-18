@@ -13,7 +13,7 @@
 	  </h1>
     </header>
     <div class="main-content">
-      <form name="RSVP Form" method="post" action="email_handler.php">
+      <form name="RSVP Form" method="post" action="https://formspree.io/otto.wedding.2017@gmail.com">
 		<fieldset>
 			<legend>RSVP</legend>
 			<div class="one-column">
@@ -79,7 +79,7 @@
 			<div class="two-column">
 				<span class="labeled-input">
 					<label for="email">Your email</label>
-					<input type="email" id="email" name="email">
+					<input type="email" id="email" name="_replyto">
 				</span>	
 				<span class="labeled-input">
 					<label for="phone-number">Your phone number</label>
@@ -94,6 +94,7 @@
 				<hr class="behind-line behind-line-right">
 			</div>
 		</fieldset>
+		<input class="hidden" name="_next" value="/">
       </form>
 	  <div id="form-messages"></div>
     </div>
