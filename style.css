@@ -168,9 +168,6 @@ legend {
 }
 
 @media screen and (max-width: 1000px) {
-	body {
-		font-size: calc(15px - 0.1vh);
-	}
 	.two-column {
 		flex: none;
 		flex-wrap: wrap;
@@ -220,5 +217,11 @@ legend {
 	.submit-button {
 		padding: 0px;
 		font-size: 250%;
+	}
+}
+
+@media (orientation: portrait) {
+	body {
+		font-size: calc(18px - 0.25vh);
 	}
 }
