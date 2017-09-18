@@ -20,33 +20,83 @@
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
+	margin: 0px;
+	padding: 0px;
+	
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: lighter;
+	color: white;
 
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: lighter;
-
-	background-image: url("pinstripe.png");
-	background-repeat: both;
+	background: #050533;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  text-align: center;
+	text-align: center;
 }
 
 h1, h2, h3 {
-  font-family: 'BabesInToyland', serif;
+	font-family: 'BabesInToyland', serif;
 }
 
 h1 {
-  font-size: 400%;
+	font-size: 400%;
 }
 
-.main-content {
-  margin: 0px;
-  padding: 0px 10px;
+form {
+	text-align: right;
+	max-width: 800px;
+}
+
+form > span {
+	text-align: right;
+	white-space: nowrap;
+}
+
+label, input {
+	margin: 5px;
+	text-align: center;
+}
+
+br {
+	margin: 0px;
+	padding: 0px;
+	width: 0px;
+}
+
+.cursive {
+	font-family: 'AdineKirnberg', cursive;
+	font-weight: lighter;
+}
+
+.header-image {
+	max-width: 600px;
 }
 
 .mini {
-  font-size: 60%;
+	font-size: 60%;
+}
+
+.body {
+	display: flex;
+	align-content: center;
+}
+
+.main-content {
+	display: flex;
+	flex: basis;
+	flex-wrap: wrap;
+	align-content: center;
+	text-align: center;
+	
+	margin: 0px auto;
+	padding: 0px 10px;
+	font-size: 120%;
+}
+
+.main-content > * {
+	margin: 0 auto;
+}
+
+.submit-button {
+	margin: 5px auto;
 }
