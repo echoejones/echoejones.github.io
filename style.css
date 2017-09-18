@@ -42,27 +42,6 @@ h1 {
 	font-size: 400%;
 }
 
-form {
-	text-align: right;
-	max-width: 800px;
-}
-
-form > span {
-	text-align: right;
-	white-space: nowrap;
-}
-
-label, input {
-	margin: 5px;
-	text-align: center;
-}
-
-br {
-	margin: 0px;
-	padding: 0px;
-	width: 0px;
-}
-
 .cursive {
 	font-family: 'AdineKirnberg', cursive;
 	font-weight: lighter;
@@ -97,6 +76,31 @@ br {
 	margin: 0 auto;
 }
 
+/* Form Stuff */
+fieldset {
+	display: flex;
+	flex-wrap: wrap;
+	
+	max-width: 5000px;
+}
+label {
+	white-space: nowrap;
+}
+.two-column {
+	display: flex;
+	flex-wrap: none;
+	
+	justify-content: flex-end;
+	text-align: right;
+}
+.labeled-input {
+	display: flex;
+	flex-wrap: none;
+	flex: 1;
+	
+	justify-content: flex-end;
+	text-align: right;
+}
 .submit-button {
 	margin: 5px auto;
 }

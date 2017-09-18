@@ -14,60 +14,76 @@
     </header>
     <div class="main-content">
       <form>
-        <span>
-			<label for="name">Your name</label>
-			<input type="text" id="name" name="name">
-		</span>
-        <span>
-			<label for="guest-count">Number of people attending (yourself + family members + plus-ones)</label>
-			<input type="number" id="guest-count" name="guest-count" min="0" max="10" value="0"><br/>
-		</span>
-        <span>
-			<label for="guest-name1">Your guest's name</label>
-			<input type="text" id="guest-name1" name="guest-name1">
-		</span>
-        <span>
-			<label for="guest-name2">Your other guest's name</label>
-			<input type="text" id="guest-name2" name="guest-name2">
-		</span>
-        <span>
-			<label for="guest-name3">The next guest's name</label>
-			<input type="text" id="guest-name3" name="guest-name3">
-		</span>
-        <span>
-			<label for="guest-name4">The 4th guest's name</label>
-			<input type="text" id="guest-name4" name="guest-name4">
-		</span>
-        <span>
-			<label for="guest-name5">The 5th guest's name</label>
-			<input type="text" id="guest-name5" name="guest-name5">
-		</span>
-        <span>
-			<label for="guest-name6">The 6th guest's name</label>
-			<input type="text" id="guest-name6" name="guest-name6">
-		</span>
-        <span>
-			<label for="guest-name7">The 7th guest's name</label>
-			<input type="text" id="guest-name7" name="guest-name7">
-		</span>
-        <span>
-			<label for="guest-name8">The 8th guest's name</label>
-			<input type="text" id="guest-name8" name="guest-name8">
-		</span>
-        <span>
-			<label for="guest-name9">The 9th guest's name</label>
-			<input type="text" id="guest-name9" name="guest-name9">
-		</span>
-        <span>
-			<label for="guest-name10">The 10th guest's name</label>
-			<input type="text" id="guest-name10" name="guest-name10">
-		</span>
-        <span>
-			<label for="email">Your email</label>
-			<input type="email" id="email" name="email">
-			<label for="phone-number">Your phone number</label>
-			<input type="tel" id="phone-number" name="phone-number">
-		</span>
+		<fieldset>
+			<span class="labeled-input">
+				<label for="name">Your name</label>
+				<input type="text" id="name" name="name">
+			</span>
+			<span class="labeled-input">
+				<label for="guest-count">Number of people coming with you</label>
+				<input type="number" id="guest-count" name="guest-count" min="0" max="10" value="0">
+			</span>
+			<div class="two-column">
+				<span class="labeled-input">
+					<label for="guest-name1">Your guest's name</label>
+					<input type="text" id="guest-name1" name="guest-name1">
+				</span>
+				<span class="labeled-input">
+					<label for="guest-name2">Your other guest's name</label>
+					<input type="text" id="guest-name2" name="guest-name2">
+				</span>
+			</div>
+			<div class="two-column">
+				<span class="labeled-input">
+					<label for="guest-name3">The next guest's name</label>
+					<input type="text" id="guest-name3" name="guest-name3">
+				</span>
+				<span class="labeled-input">
+					<label for="guest-name4">The 4th guest's name</label>
+					<input type="text" id="guest-name4" name="guest-name4">
+				</span>
+			</div>
+			<div class="two-column">
+				<span class="labeled-input">
+					<label for="guest-name5">The 5th guest's name</label>
+					<input type="text" id="guest-name5" name="guest-name5">
+				</span>
+				<span class="labeled-input">
+					<label for="guest-name6">The 6th guest's name</label>
+					<input type="text" id="guest-name6" name="guest-name6">
+				</span>
+			</div>
+			<div class="two-column">
+				<span class="labeled-input">
+					<label for="guest-name7">The 7th guest's name</label>
+					<input type="text" id="guest-name7" name="guest-name7">
+				</span>
+				<span class="labeled-input">
+					<label for="guest-name8">The 8th guest's name</label>
+					<input type="text" id="guest-name8" name="guest-name8">
+				</span>
+			</div>
+			<div class="two-column">
+				<span class="labeled-input">
+					<label for="guest-name9">The 9th guest's name</label>
+					<input type="text" id="guest-name9" name="guest-name9">
+				</span>
+				<span class="labeled-input">
+					<label for="guest-name10">The 10th guest's name</label>
+					<input type="text" id="guest-name10" name="guest-name10">
+				</span>
+			</div>
+			<div class="two-column">
+				<span class="labeled-input">
+					<label for="email">Your email</label>
+					<input type="email" id="email" name="email">
+				</span>	
+				<span class="labeled-input">
+					<label for="phone-number">Your phone number</label>
+					<input type="tel" id="phone-number" name="phone-number">
+				</span>
+			</div>
+		</fieldset>
 		<input class="submit-button" type="submit">
       </form>
     </div>
