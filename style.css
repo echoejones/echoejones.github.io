@@ -128,7 +128,7 @@ legend {
 .labeled-input {
 	display: flex;
 	flex-wrap: none;
-	margin: 0px 0px 0px 0px;
+	margin: 0px 0px 0px auto;
 	
 	justify-content: flex-end;
 	text-align: right;
