@@ -27,8 +27,11 @@ body {
 	font-weight: 300;
 	color: white;
 	font-size: 100%;
+	
+	min-height: 100vh;
 
-	background: #050533;
+	background: #030333;
+	background: linear-gradient(#5050CF, #000009);
 	box-sizing: border-box;
 }
 
@@ -47,12 +50,13 @@ h1 {
 .cursive {
 	font-family: 'AdineKirnberg', cursive;
 	font-weight: lighter;
+	line-height: 75%;
 }
 
 .header-image {
 	max-width: 600px;
 	width: 100%;
-	padding: 0px 10px;
+	padding: 20px 10px 0px 10px;
 	box-sizing: border-box;
 }
 
@@ -174,6 +178,9 @@ legend {
 }
 
 @media screen and (max-width: 850px), screen and (orientation: portrait) {
+	h1 {
+		font-size: 300%;
+	}
 	body {
 		font-size: 20px;
 	}
@@ -227,6 +234,9 @@ legend {
 }
 
 @media screen and (max-width: 700px) {
+	h1 {
+		font-size: 200%;
+	}
 	body {
 		font-size: calc(15px + 2vw);
 	}
