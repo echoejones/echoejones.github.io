@@ -169,7 +169,7 @@ legend {
 
 @media screen and (max-width: 1000px) {
 	body {
-		font-size: calc(25px - 1vh);
+		font-size: calc(20px - 0.5vh);
 	}
 	.two-column {
 		flex: none;
@@ -185,7 +185,7 @@ legend {
 		white-space: normal;
 		text-align: center;
 		
-		min-width: 0px;
+		min-width: 50%;
 		max-width: 100%;
 	}
 	label {
