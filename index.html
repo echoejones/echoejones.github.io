@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title></title>
 	<link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400">
+	<script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <header>
@@ -15,14 +16,17 @@
     <div class="main-content">
       <form>
 		<fieldset>
-			<span class="labeled-input">
-				<label for="name">Your name</label>
-				<input type="text" id="name" name="name">
-			</span>
-			<span class="labeled-input">
-				<label for="guest-count">Number of people coming with you</label>
-				<input type="number" id="guest-count" name="guest-count" min="0" max="10" value="0">
-			</span>
+			<legend>RSVP</legend>
+			<div class="one-column">
+				<span class="labeled-input">
+					<label for="name">Your name</label>
+					<input type="text" id="name" name="name">
+				</span>
+				<span class="labeled-input">
+					<label for="guest-count">Number of people coming with you</label>
+					<input type="number" id="guest-count" name="guest-count" min="0" max="10" value="0">
+				</span>
+				</div>
 			<div class="two-column">
 				<span class="labeled-input">
 					<label for="guest-name1">Your guest's name</label>
@@ -39,37 +43,37 @@
 					<input type="text" id="guest-name3" name="guest-name3">
 				</span>
 				<span class="labeled-input">
-					<label for="guest-name4">The 4th guest's name</label>
+					<label for="guest-name4">Other next guest's name</label>
 					<input type="text" id="guest-name4" name="guest-name4">
 				</span>
 			</div>
 			<div class="two-column">
 				<span class="labeled-input">
-					<label for="guest-name5">The 5th guest's name</label>
+					<label for="guest-name5">Next other guest's name</label>
 					<input type="text" id="guest-name5" name="guest-name5">
 				</span>
 				<span class="labeled-input">
-					<label for="guest-name6">The 6th guest's name</label>
+					<label for="guest-name6">Next other next guest</label>
 					<input type="text" id="guest-name6" name="guest-name6">
 				</span>
 			</div>
 			<div class="two-column">
 				<span class="labeled-input">
-					<label for="guest-name7">The 7th guest's name</label>
+					<label for="guest-name7">Other next other guest</label>
 					<input type="text" id="guest-name7" name="guest-name7">
 				</span>
 				<span class="labeled-input">
-					<label for="guest-name8">The 8th guest's name</label>
+					<label for="guest-name8">Other other next guest</label>
 					<input type="text" id="guest-name8" name="guest-name8">
 				</span>
 			</div>
 			<div class="two-column">
 				<span class="labeled-input">
-					<label for="guest-name9">The 9th guest's name</label>
+					<label for="guest-name9">Next next other guest</label>
 					<input type="text" id="guest-name9" name="guest-name9">
 				</span>
 				<span class="labeled-input">
-					<label for="guest-name10">The 10th guest's name</label>
+					<label for="guest-name10">That's a lot of names</label>
 					<input type="text" id="guest-name10" name="guest-name10">
 				</span>
 			</div>
@@ -83,8 +87,14 @@
 					<input type="tel" id="phone-number" name="phone-number">
 				</span>
 			</div>
+			<div class="one-column">
+				<input class="submit-button" type="submit" value="Submit">
+			</div>
+			<div class="squish-columns">
+				<hr class="behind-line">
+				<hr class="behind-line">
+			</div>
 		</fieldset>
-		<input class="submit-button" type="submit">
       </form>
     </div>
   </body>
