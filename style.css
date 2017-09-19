@@ -25,14 +25,15 @@ body {
 	left: 0px;
 	margin: 0px;
 	padding: 0px;
-	
+
+	min-height: 100vh;
+  z-index: 0;
+
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
 	color: white;
 	font-size: 100%;
 	line-height: 1.25;
-	
-	min-height: 100vh;
 
 	background: #030333;
 	background: linear-gradient(#5050DD, #000009);
@@ -48,9 +49,23 @@ header {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	
+
 	padding: 100px 0px 10px 0px;
-	margin-bottom: 50px;
+	margin: 0px auto 50px auto;
+	max-width: 600px;
+  z-index: 0;
+
+}
+header::before {
+	content: '';
+	position: absolute;
+	top: calc(-1100px / 2.8);
+	width: 1100px;
+	height: 1100px;
+	background: url("images/Octopus.svg") no-repeat center center;
+	filter: opacity(20%);
+	transform: rotate(-45deg);
+  z-index: -1;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,8 +92,10 @@ p {
 }
 
 section {
+	position: relative;
 	flex-basis: 100%;
 	margin: 30px 10px;
+  z-index: 0;
 }
 
 .cursive {
@@ -93,17 +110,6 @@ section {
 }
 .thin-font {
 	font-weight: lighter;
-}
-span.cursive {
-	position: relative;
-	font-size: 200%;
-	line-height: 25%;
-}
-span.jumbo {
-	font-size: 350%;
-}
-span.wumbo {
-	font-size: 500%;
 }
 .grenadier {
 	font-family: 'Grenadier', sans-serif;
@@ -122,7 +128,6 @@ span.wumbo {
 .header-image {
 	position: relative;
 	top: 15px;
-	max-width: 600px;
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
@@ -144,7 +149,7 @@ span.wumbo {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	
+
 	margin: 0px auto;
 	padding: 0px 10px;
 	font-size: 120%;
@@ -156,30 +161,31 @@ form {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 40px 10px;
+	z-index: 0;
 }
 fieldset {
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: 100%;
 	padding: 15px 30px;
-	
+
 	border: 10px double white;
 }
 label {
 	white-space: nowrap;
 	margin: 5px 5px 5px 5px;
 	padding: 1px 0px;
-	
+
 	font-size: 100%;
 }
 input {
 	margin: 5px 40px 5px 5px;
 	padding: 1px 5px;
-	
+
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 100%;
 	text-align: center;
-	
+
 	width: 175px;
 	box-sizing: border-box;
 }
@@ -198,7 +204,7 @@ legend {
 	display: flex;
 	flex-wrap: none;
 	width: 100%;
-	
+
 	justify-content: space-between;
 	text-align: right;
 }
@@ -206,7 +212,7 @@ legend {
 	display: flex;
 	flex-wrap: none;
 	margin: 0px 0px 0px auto;
-	
+
 	justify-content: flex-end;
 	text-align: right;
 }
@@ -220,10 +226,10 @@ legend {
 	color: white;
 	margin: 20px auto 0px auto;
 	padding: 0px 64px;
-	
+
 	width: auto;
 	max-width: 90%;
-	
+
 	border: none;
 	background: none;
 	box-sizing: border-box;
@@ -234,7 +240,7 @@ legend {
 .behind-line {
 	position: relative;
 	top: -1.25em;
-	
+
 	width: 1em;
 }
 .behind-line-left {
@@ -246,22 +252,35 @@ legend {
 .squish-columns {
 	display: flex;
 	flex-wrap: none;
-	
+
 	justify-content: center;
 }
 
 @media screen and (max-width: 850px), screen and (orientation: portrait) {
+	header {
+		padding-top: 75px;
+		margin-bottom: 30px;
+	}
 	h1 {
-		font-size: 300%;
+		font-size: 400%;
 	}
 	body {
 		font-size: 20px;
+	}
+	section {
+		margin: 20px 10px;
+	}
+	.jumbo {
+		font-size: 200%;
+	}
+	.wumbo {
+		font-size: 300%;
 	}
 	.labeled-input {
 		display: block;
 		white-space: normal;
 		text-align: center;
-		
+
 		min-width: 50%;
 		max-width: 100%;
 	}
@@ -278,9 +297,9 @@ legend {
 		display: block;
 		margin: 3px;
 		white-space: normal;
-		
+
 		flex: none;
-		
+
 		min-width: 0px;
 		max-width: 100%;
 	}
@@ -308,7 +327,7 @@ legend {
 
 @media screen and (max-width: 700px) {
 	h1 {
-		font-size: 200%;
+		font-size: 300%;
 	}
 	body {
 		font-size: calc(15px + 2vw);
