@@ -51,7 +51,7 @@ header {
 	text-align: center;
 
 	padding: 100px 0px 10px 0px;
-	margin: 0px auto 50px auto;
+	margin: 0px auto 10px auto;
 	max-width: 600px;
   z-index: 0;
 
@@ -95,6 +95,7 @@ section {
 	position: relative;
 	flex-basis: 100%;
 	margin: 30px 10px;
+	padding: 0px 20px;
   z-index: 0;
 }
 
@@ -153,6 +154,42 @@ section {
 	margin: 0px auto;
 	padding: 0px 10px;
 	font-size: 120%;
+}
+.double-hr {
+	position: relative;
+	z-index: 0;
+	margin: 20px 0px;
+	border: none;
+}
+.double-hr::before{
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	z-index: 0;
+	width: 90%;
+	max-width: 600px;
+	height: 100%;
+	border-top: 2px solid white;
+	transform: translate(-50%);
+}
+.double-hr::after{
+	content: '';
+	position: absolute;
+	top: 8px;
+	left: 50%;
+	z-index: 0;
+	width: 85%;
+	max-width: 570px;
+	height: 100%;
+	border-top: 1px solid white;
+	transform: translate(-50%);
+}
+.double-hr--flipped::after{
+	top: -7px;
+}
+.double-hr--flipped {
+	margin-top: 10px;
 }
 
 /* Form Stuff */
@@ -259,7 +296,6 @@ legend {
 @media screen and (max-width: 850px), screen and (orientation: portrait) {
 	header {
 		padding-top: 75px;
-		margin-bottom: 30px;
 	}
 	h1 {
 		font-size: 400%;
@@ -327,7 +363,7 @@ legend {
 
 @media screen and (max-width: 700px) {
 	header::before {
-	top: -34vw;
+		top: -34vw;
 		width: 100vw;
 		height: 100vw;
 	}
