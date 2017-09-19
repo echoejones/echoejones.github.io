@@ -40,21 +40,34 @@ body {
 	box-sizing: border-box;
 }
 
+header {
+	position: relative;
+	display: flex;
+	flex: basis;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	
+	padding: 100px 0px 10px 0px;
+	margin-bottom: 50px;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	text-align: center;
+	width: 100%;
 }
 
 h1, h2, h3 {
-	position: relative;
-	top: 20px;
 	font-family: 'Grenadier', sans-serif;
 	font-weight: lighter;
 	line-height: 1;
-	margin: 10px 0px 20px 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 h1 {
-	font-size: 400%;
+	font-size: 500%;
 }
 h2 {
 	font-size: 300%;
@@ -70,8 +83,16 @@ section {
 
 .cursive {
 	font-family: 'AdineKirnberg', cursive;
-	font-weight: lighter;
 	line-height: 75%;
+}
+.jumbo {
+	font-size: 250%;
+}
+.wumbo {
+	font-size: 350%;
+}
+.thin-font {
+	font-weight: lighter;
 }
 span.cursive {
 	position: relative;
@@ -92,17 +113,28 @@ span.wumbo {
 	margin: 0px;
 	padding: 0px;
 }
-
+.header-image-container {
+	top: 20px;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
 .header-image {
+	position: relative;
+	top: 15px;
 	max-width: 600px;
 	width: 100%;
-	padding: 30px 10px 10px 10px;
+	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
 }
 
 .mini {
 	font-size: 60%;
+}
+
+.full-width {
+	width: 100%;
 }
 
 .main-content {
