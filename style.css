@@ -92,11 +92,15 @@ p {
 }
 
 section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	position: relative;
 	flex-basis: 100%;
 	margin: 30px 10px;
 	padding: 0px 20px;
-  z-index: 0;
+	z-index: 0;
 }
 
 .cursive {
@@ -134,7 +138,31 @@ section {
 	margin: 0px;
 	box-sizing: border-box;
 }
-
+.image-button {
+	width: 100px;
+	height: 100px;
+}
+.icon-logo {
+	height: 80px;
+	width: auto;
+	margin: 10px;
+	padding: 0px;
+	filter: saturate(0%) brightness(1000%);
+}
+.icon-logo--large {
+	height: 125px;
+}
+.icon-logo:hover, .icon-logo:active, .icon-logo:focus {
+	filter: brightness(100%) saturate(100%);
+}
+.icon-grid {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	width: 90%;
+	max-width: 540px;
+}
 .mini {
 	font-size: 60%;
 }
@@ -197,7 +225,7 @@ form {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	margin: 40px 10px;
+	margin: 40px 10px 60px 10px;
 	z-index: 0;
 }
 fieldset {
@@ -270,6 +298,7 @@ legend {
 	border: none;
 	background: none;
 	box-sizing: border-box;
+	cursor: pointer;
 }
 .submit-button:hover, .submit-button:active, .submit-button:focus {
 	font-weight: 400;
