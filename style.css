@@ -69,6 +69,7 @@ header {
 	filter: opacity(20%);
 	transform: translate(calc(50vw - 50%), -35.75%) rotate(-45deg);
 	z-index: -1;
+	overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
