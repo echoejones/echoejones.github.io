@@ -60,7 +60,7 @@ header {
 .octopus {
 	content: '';
 	position: absolute;
-	width: 100vw;
+	width: 99.5vw;
 	max-width: 1100px;
 	height: auto;
 	background: url("images/Octopus.svg") no-repeat center center;
