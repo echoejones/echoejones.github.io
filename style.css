@@ -67,7 +67,7 @@ header {
 	height: auto;
 	background: url("images/Octopus.svg") no-repeat center center;
 	filter: opacity(20%);
-	transform: translate(calc(50vw - 50%), -35.75%) rotate(-45deg);
+	transform: translate(calc(50vw - 50%), -35.75%);
 	z-index: -1;
 	overflow: hidden;
 }
