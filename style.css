@@ -201,7 +201,6 @@ section {
 .double-hr::before{
 	content: '';
 	position: absolute;
-	top: 0px;
 	left: 50%;
 	z-index: 0;
 	width: 90%;
@@ -213,7 +212,7 @@ section {
 .double-hr::after{
 	content: '';
 	position: absolute;
-	top: 8px;
+	top: 0px;
 	left: 50%;
 	z-index: 0;
 	width: 85%;
