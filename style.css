@@ -222,11 +222,36 @@ section {
 	border-top: 1px solid white;
 	transform: translate(-50%);
 }
+.double-hr--flipped::before{
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	z-index: 0;
+	width: 90%;
+	max-width: 600px;
+	height: 100%;
+	border-top: 2px solid white;
+	transform: translate(-50%);
+}
 .double-hr--flipped::after{
+	content: '';
+	position: absolute;
 	top: -7px;
+	left: 50%;
+	z-index: 0;
+	width: 85%;
+	max-width: 570px;
+	height: 100%;
+	border-top: 1px solid white;
+	transform: translate(-50%);
 }
 .double-hr--flipped {
-	padding-top: 10px;
+	position: relative;
+	z-index: 0;
+	margin: 0px;
+	padding: 10px 10px 10px 0px;
+	border: none;
 }
 
 /* Form Stuff */
