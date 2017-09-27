@@ -202,6 +202,7 @@ section {
 	content: '';
 	position: absolute;
 	left: 50%;
+	top: 0px;
 	z-index: 0;
 	width: 90%;
 	max-width: 600px;
@@ -212,7 +213,7 @@ section {
 .double-hr::after{
 	content: '';
 	position: absolute;
-	top: 0px;
+	top: 8px;
 	left: 50%;
 	z-index: 0;
 	width: 85%;
@@ -224,7 +225,6 @@ section {
 .double-hr--flipped::before{
 	content: '';
 	position: absolute;
-	top: 0px;
 	left: 50%;
 	z-index: 0;
 	width: 90%;
@@ -236,7 +236,7 @@ section {
 .double-hr--flipped::after{
 	content: '';
 	position: absolute;
-	top: -7px;
+	top: 0px;
 	left: 50%;
 	z-index: 0;
 	width: 85%;
