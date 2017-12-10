@@ -118,18 +118,13 @@ section {
 	font-size: 250%;
 }
 .wumbo {
-	font-size: 350%;
+	font-size: 400%;
 }
 .thin-font {
 	font-weight: lighter;
 }
 .grenadier {
 	font-family: 'Grenadier', sans-serif;
-}
-.squish-height {
-	line-height: 50%;
-	margin: 0px;
-	padding: 0px;
 }
 .header-image-container {
 	top: 20px;
@@ -145,34 +140,6 @@ section {
 	padding: 0px 10px;
 	margin: 0px;
 	box-sizing: border-box;
-}
-.image-button {
-	width: 100px;
-	height: 100px;
-}
-.icon-logo {
-	height: 80px;
-	width: auto;
-	margin: 10px;
-	padding: 0px;
-	filter: saturate(0%) brightness(1000%);
-}
-.icon-logo--large {
-	height: 125px;
-}
-.icon-logo:hover, .icon-logo:active, .icon-logo:focus {
-	filter: brightness(100%) saturate(100%);
-}
-.icon-grid {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
-	width: 100%;
-	max-width: 600px;
-}
-.mini {
-	font-size: 60%;
 }
 
 .full-width {
@@ -191,6 +158,7 @@ section {
 	padding: 0px 10px;
 	font-size: 120%;
 }
+
 .double-hr {
 	position: relative;
 	z-index: 0;
@@ -213,7 +181,7 @@ section {
 .double-hr::after{
 	content: '';
 	position: absolute;
-	top: 8px;
+	top: 9px;
 	left: 50%;
 	z-index: 0;
 	width: 85%;
@@ -221,6 +189,13 @@ section {
 	height: 100%;
 	border-top: 1px solid white;
 	transform: translate(-50%);
+}
+.double-hr--flipped {
+	position: relative;
+	z-index: 0;
+	margin: 0px;
+	padding: 10px 10px 10px 0px;
+	border: none;
 }
 .double-hr--flipped::before{
 	content: '';
@@ -245,114 +220,16 @@ section {
 	border-top: 1px solid white;
 	transform: translate(-50%);
 }
-.double-hr--flipped {
-	position: relative;
-	z-index: 0;
-	margin: 0px;
-	padding: 10px 10px 10px 0px;
-	border: none;
+
+.photo-grid {
+	margin-top: 35px;
 }
 
-/* Form Stuff */
-form {
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	margin: 40px 10px 60px 10px;
-	z-index: 0;
-}
-fieldset {
-	display: flex;
-	flex-wrap: wrap;
-	flex-basis: 100%;
-	padding: 15px 30px;
-
-	border: 10px double white;
-}
-label {
-	white-space: nowrap;
-	margin: 5px 5px 5px 5px;
-	padding: 1px 0px;
-
-	font-size: 100%;
-}
-input {
-	margin: 5px 40px 5px 5px;
-	padding: 1px 5px;
-
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 100%;
-	text-align: center;
-
-	width: 175px;
-	box-sizing: border-box;
-}
-legend {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 100;
-	font-size: 250%;
-	color: white;
-	padding: 0px 15px;
-	width: auto;
-}
-.hidden {
-	display: none !important;
-}
-.two-column {
-	display: flex;
-	flex-wrap: none;
-	width: 100%;
-
-	justify-content: space-between;
-	text-align: right;
-}
-.labeled-input {
-	display: flex;
-	flex-wrap: none;
-	margin: 0px 0px 0px auto;
-
-	justify-content: flex-end;
-	text-align: right;
-}
-.two-column > .labeled-input {
-	min-width: 50%;
-}
-.submit-button {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 100;
-	font-size: 250%;
-	color: white;
-	margin: 20px auto 0px auto;
-	padding: 0px 64px;
-
-	width: auto;
-	max-width: 90%;
-
-	border: none;
-	background: none;
-	box-sizing: border-box;
-	cursor: pointer;
-}
-.submit-button:hover, .submit-button:active, .submit-button:focus {
-	font-weight: 400;
-}
-.behind-line {
-	position: relative;
-	top: -1.25em;
-
-	width: 1em;
-}
-.behind-line-left {
-	margin: 0px 4em 0px 0px;
-}
-.behind-line-right {
-	margin: 0px 0px 0px 4em;
-}
-.squish-columns {
-	display: flex;
-	flex-wrap: none;
-
-	justify-content: center;
+.thumbnail {
+	width: 100px;
+	height: 100px;
+	
+	background: red;
 }
 
 @media screen and (max-width: 850px), screen and (orientation: portrait) {
@@ -374,53 +251,6 @@ legend {
 	.wumbo {
 		font-size: 300%;
 	}
-	.labeled-input {
-		display: block;
-		white-space: normal;
-		text-align: center;
-
-		min-width: 50%;
-		max-width: 100%;
-	}
-	.two-column {
-		flex: none;
-		flex-wrap: wrap;
-	}
-	.two-column > .labeled-input {
-		min-width: 0px;
-		width: 100%;
-		max-width: 100%;
-	}
-	label {
-		display: block;
-		margin: 3px;
-		white-space: normal;
-
-		flex: none;
-
-		min-width: 0px;
-		max-width: 100%;
-	}
-	input {
-		margin: 3px auto 20px auto;
-		min-width: 50%;
-	}
-	fieldset {
-		padding: 15px 10px;
-		max-width: 100%;
-	}
-	form {
-		position: relative;
-		max-width: 100%;
-		padding: 0px 10px;
-	}
-	legend {
-		font-size: 250%;
-	}
-	.submit-button {
-		padding: 0px;
-		font-size: 250%;
-	}
 }
 
 @media screen and (max-width: 700px) {
@@ -434,24 +264,5 @@ legend {
 	}
 	body {
 		font-size: calc(15px + 2vw);
-	}
-	form {
-		width: 100%;
-	}
-	legend {
-		font-size: 200%;
-	}
-	.submit-button {
-		font-size: 200%;
-	}
-	.behind-line {
-		top: -1.1em;
-		width: 0.5em;
-	}
-	.behind-line-left {
-		margin: 0px 3.1em 0px 0px;
-	}
-	.behind-line-right {
-		margin: 0px 0px 0px 3.1em;
 	}
 }
