@@ -12,8 +12,6 @@ var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerW
 document.addEventListener("keydown", GetKey);
 document.addEventListener("click", GetClick);
 exitButton.addEventListener("click", ExitView);
-leftArrow.addEventListener("click", GetLeft);
-rightArrow.addEventListener("click", GetRight);
 
 for (var i = 0; i < 345; i++){
 	var img = document.createElement("img");
