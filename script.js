@@ -5,7 +5,7 @@ var exitButton = document.getElementById("exit-button");
 var leftArrow = document.getElementById("left-arrow");
 var rightArrow = document.getElementById("right-arrow");
 
-var currentPhotoIndex = 0;
+var currentPhotoIndex = 1;
 var lightBoxMode = true;
 var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
