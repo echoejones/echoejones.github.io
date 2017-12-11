@@ -284,9 +284,6 @@ section {
 	position: absolute;
 	top: 10px;
 	
-	width: 50px;
-	height: 50px;
-	
     font-family: 'BabesInToyland', cursive;
 	text-align: center;
 	
@@ -297,26 +294,33 @@ section {
 	font-size: 50px;
 	line-height: 50px;
 	left: calc(100% - 40px - 10px);
+	
+	width: 50px;
+	height: 50px;
 }
 
 .exit-button:active, .exit-button:focus, .exit-button:hover {
-	font-size: 60px;
+	color: rgba(1, 1, 1, 0.7);
 }
 
 .nav-arrow:active, .nav-arrow:focus, .nav-arrow:hover {
-	font-size: 120px;
+	color: rgba(1, 1, 1, 0.7);
 }
 
 
 .nav-arrow {
-	top: calc(50% - 25px);
+	left: 10px;
+	top: 50px;
+	
 	font-size: 100px;
-	line-height: 50px;
-	left: -10px;
+	line-height: 100px;
+	
+	width: 100px;
+	height: calc(100% - 100px);
 }
 
 .nav-arrow + .nav-arrow {
-	left: calc(100% - 30px - 10px);
+	left: calc(100% - 100px - 10px);
 }
 
 @media screen and (max-width: 850px), screen and (orientation: portrait) {
