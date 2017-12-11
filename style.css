@@ -296,7 +296,7 @@ section {
 .exit-button {
 	font-size: 50px;
 	line-height: 50px;
-	left: calc(100% - 50px - 10px);
+	left: calc(100% - 40px - 10px);
 }
 
 .exit-button:active, .exit-button:focus, .exit-button:hover {
@@ -312,11 +312,11 @@ section {
 	top: calc(50% - 25px);
 	font-size: 100px;
 	line-height: 50px;
-	left: 10px;
+	left: -10px;
 }
 
 .nav-arrow + .nav-arrow {
-	left: calc(100% - 50px - 10px);
+	left: calc(100% - 30px - 10px);
 }
 
 @media screen and (max-width: 850px), screen and (orientation: portrait) {
