@@ -110,10 +110,20 @@ section {
 	z-index: 0;
 }
 
-.cursive {
-	font-family: 'AdineKirnberg', cursive;
-	line-height: 75%;
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
+
+.hidden {
+	display: none;
+}
+
 .jumbo {
 	font-size: 250%;
 }
@@ -125,6 +135,10 @@ section {
 }
 .grenadier {
 	font-family: 'Grenadier', sans-serif;
+}
+.cursive {
+	font-family: 'AdineKirnberg', cursive;
+	line-height: 75%;
 }
 .header-image-container {
 	top: 20px;
@@ -147,6 +161,8 @@ section {
 }
 
 .main-content {
+	position: relative;
+	z-index: 0;
 	display: flex;
 	flex: basis;
 	flex-wrap: wrap;
@@ -223,13 +239,83 @@ section {
 
 .photo-grid {
 	margin-top: 35px;
+	max-width: 1080px;
 }
 
 .thumbnail {
 	width: 100px;
 	height: 100px;
 	
-	background: red;
+	margin: 2px 4px;
+	cursor: pointer;
+	
+	background: white;
+}
+
+.lightbox {
+	display: none;
+	
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	
+	width: 100%;
+	height: 100vh;
+	
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.main-image {
+	position: absolute;
+	left: 30px;
+	top: 10px;
+	
+	width: calc(100% - 60px);
+	height: calc(100% - 20px);
+	
+	background-color: none;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.button {
+	position: absolute;
+	left: 0px;
+	top: 10px;
+	
+	width: 50px;
+	height: 50px;
+	
+    font-family: 'BabesInToyland', cursive;
+	text-align: center;
+	
+	cursor: pointer;
+}
+
+.exit-button {
+	font-size: 50px;
+	line-height: 50px;
+}
+
+.exit-button:active, .exit-button:focus, .exit-button:hover {
+	font-size: 60px;
+}
+
+.nav-arrow:active, .nav-arrow:focus, .nav-arrow:hover {
+	font-size: 120px;
+}
+
+
+.nav-arrow {
+	top: calc(50% - 25px);
+	font-size: 100px;
+	line-height: 50px;
+}
+
+.nav-arrow + .nav-arrow {
+	
 }
 
 @media screen and (max-width: 850px), screen and (orientation: portrait) {
