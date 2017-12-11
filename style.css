@@ -284,13 +284,13 @@ section {
 	position: absolute;
 	top: 10px;
 	
-    font-family: 'BabesInToyland', cursive;
 	text-align: center;
 	
 	cursor: pointer;
 }
 
 .exit-button {
+    	font-family: 'BabesInToyland', cursive;
 	font-size: 50px;
 	line-height: 50px;
 	left: calc(100% - 40px - 10px);
@@ -309,7 +309,7 @@ section {
 
 
 .nav-arrow {
-	position: relative;
+	position: absolute;
 	left: 10px;
 	top: 50px;
 	
@@ -320,9 +320,14 @@ section {
 	height: calc(100% - 100px);
 }
 
+.nav-arrow + .nav-arrow {
+	left: calc(100% - 100px - 10px);
+}
+
 .nav-arrow::after {
-	position: absolute;
-	left: 0px;
+	content: '';
+	position: fixed;
+	left: 10px;
 	top: calc(50% - 50px);
 	width: 0;
 	height: 0;
@@ -331,12 +336,8 @@ section {
 	border-color: transparent transparent transparent #ffffff;
 }
 
-.nav-arrow + .nav-arrow {
+.nav-arrow + .nav-arrow:after {
 	left: calc(100% - 100px - 10px);
-}
-
-
-.nav-arrow + .nav-arrow::after {
 	border-width: 50px 100px 50px 0;
 	border-color: transparent #ffffff transparent transparent;
 }
