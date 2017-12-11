@@ -46,13 +46,13 @@ function ShowImage() {
 	
 	var resizeRatio = hiddenImage.naturalHeight / (viewportHeight - 20);
 	var shownHeight = hiddenImage.naturalHeight / resizeRatio;
-	var shownWidth = hiddenImage.naturalWidth / resizeRatio;
-	var widthDiff = viewportWidth - shownWidth;
-	var widthDiffHalf = widthDiff / 2;
+	var shownWidth = hiddenImage.naturalHeight / resizeRatio;
+	var heightDiff = viewportHeight - shownHeight;
+	var heightDiffHalf = heightDiff / 2;
 	
-	exitButton.style.left = widthDiffHalf + shownWidth + 10 +"px";
-	leftArrow.style.left = widthDiffHalf - 75 +"px";
-	rightArrow.style.left = widthDiffHalf + shownWidth + 10 +"px";
+	exitButton.style.left = heightDiffHalf + shownWidth + 10 +"px";
+	leftArrow.style.left = heightDiffHalf - 75 +"px";
+	rightArrow.style.left = heightDiffHalf + shownWidth + 10 +"px";
 }
 
 function GetLeft() {
