@@ -9,7 +9,7 @@ var currentPhotoIndex = 1;
 var lightBoxMode = true;
 var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-document.addEventListener("keydown", GetKey);
+lightbox.addEventListener("keydown", GetKey);
 document.addEventListener("click", GetClick);
 exitButton.addEventListener("click", ExitView);
 
