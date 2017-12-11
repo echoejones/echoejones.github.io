@@ -1,21 +1,19 @@
 var pictures = document.getElementById("photo-grid");
 var lightbox = document.getElementById("lightbox");
 var mainImage = document.getElementById("main-image");
-//var hiddenImage = document.getElementById("hidden-image");
 var exitButton = document.getElementById("exit-button");
 var leftArrow = document.getElementById("left-arrow");
 var rightArrow = document.getElementById("right-arrow");
 
-//var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-//var viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-
 var currentPhotoIndex = 0;
+var lightBoxMode = true;
+var viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
 document.addEventListener("keydown", GetKey);
+document.addEventListener("click", GetClick);
 exitButton.addEventListener("click", ExitView);
 leftArrow.addEventListener("click", GetLeft);
 rightArrow.addEventListener("click", GetRight);
-//hiddenImage.onload = function() { ShowImage(); };
 
 for (var i = 0; i < 345; i++){
 	var img = document.createElement("img");
@@ -28,32 +26,19 @@ for (var i = 0; i < 345; i++){
 }
 
 function ExitView () {
+	lightBoxMode = false;
 	lightbox.style.display = "none";
 }
 
 function ViewFull() {
 	currentPhotoIndex = parseInt(this.id);
+	lightbox.style.display = "block";
 	LoadImage();
 }
 
-function LoadImage () {
+function LoadImage() {
 	mainImage.style.backgroundImage = "url('photos/Nathan Echoe Wedding ("+currentPhotoIndex+").jpg')";
-	//*hiddenImage.src = "photos/Nathan Echoe Wedding ("+currentPhotoIndex+").jpg";
-	ShowImage();
-}
-
-function ShowImage() {
-	lightbox.style.display = "block";
-	
-	/*var resizeRatio = hiddenImage.naturalHeight / (viewportHeight - 20);
-	var shownHeight = hiddenImage.naturalHeight / resizeRatio;
-	var shownWidth = hiddenImage.naturalHeight / resizeRatio;
-	var heightDiff = viewportHeight - shownHeight;
-	var heightDiffHalf = heightDiff / 2;
-	
-	exitButton.style.right = heightDiffHalf - 75 +"px;
-	leftArrow.style.left = heightDiffHalf - 75 +"px";
-	rightArrow.style.right = heightDiffHalf - 75 +"px;*/
+	lightBoxMode = true;
 }
 
 function GetLeft() {
@@ -76,4 +61,15 @@ function GetKey(e) {
 	if(e.keyCode == 27){
 		ExitView();
 	}
+}
+
+function GetClick(e) {
+	if(lightBoxMode){
+		if(e.clientX > (viewportWidth/2) + (viewportWidth * 0.33)) {
+			GetRight();
+		}
+		else if (e.clientX < (viewportWidth/2) - (viewportWidth * 0.33)) {
+			GetLeft();
+		}
+	}	
 }
