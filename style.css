@@ -93,9 +93,8 @@ h2 {
 }
 p {
 	margin: 10px;
-max-width: 600px;
-width: 95%;
-	
+	max-width: 600px;
+	width: 95%;	
 }
 
 section {
@@ -348,8 +347,8 @@ section {
 	left: 10px;
 	top: 10px;
 	
-	font-size: 50px;
-	line-height: 50px;
+	font-size: 30px;
+	line-height: 30px;
 }
 
 @media screen and (max-width: 850px), screen and (orientation: portrait) {
