@@ -343,6 +343,15 @@ section {
 	border-color: transparent transparent transparent #ffffff;
 }
 
+.image-number {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	
+	font-size: 50px;
+	line-height: 50px;
+}
+
 @media screen and (max-width: 850px), screen and (orientation: portrait) {
 	header {
 		padding-top: 75px;
