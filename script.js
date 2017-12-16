@@ -4,6 +4,7 @@ var mainImage = document.getElementById("main-image");
 var exitButton = document.getElementById("exit-button");
 var leftArrow = document.getElementById("left-arrow");
 var rightArrow = document.getElementById("right-arrow");
+var imageNumber = document.getElementById("image-number");
 
 var currentPhotoIndex = 1;
 var lightBoxMode = true;
@@ -35,6 +36,7 @@ function ViewFull() {
 }
 
 function LoadImage() {
+	imageNumber.value = "#"+currentPhotoIndex+"/345";
 	mainImage.style.backgroundImage = "url('photos/Nathan Echoe Wedding ("+currentPhotoIndex+").jpg')";
 	lightBoxMode = true;
 }
