@@ -36,7 +36,7 @@ function ViewFull() {
 }
 
 function LoadImage() {
-	imageNumber.value = "#"+currentPhotoIndex+"/345";
+	imageNumber.innerHTML = "#"+currentPhotoIndex+"/345";
 	mainImage.style.backgroundImage = "url('photos/Nathan Echoe Wedding ("+currentPhotoIndex+").jpg')";
 	lightBoxMode = true;
 }
